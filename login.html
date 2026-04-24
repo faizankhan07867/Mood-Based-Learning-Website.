@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Login - Mood Learning</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <!-- LEFT -->
+    <div class="left">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" class="main-logo-image">
+
+        <h1>🧠 Mood-Based Learning Website</h1>
+
+        <p>
+            Improve focus and productivity by learning according to your mood.
+        </p>
+
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" class="book-img">
+
+        <p>"Knowledge is power. Keep learning every day."</p>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right">
+
+        <div class="login-box">
+
+            <!-- IMAGE HEADER -->
+            <img src="https://cdn-icons-png.flaticon.com/512/295/295128.png" class="login-banner">
+
+            <!-- LOGIN -->
+            <div id="loginForm">
+
+                <input type="email" id="email" placeholder="Email"><br><br>
+
+                <input type="password" id="pass" placeholder="Password"><br><br>
+
+                <button type="button" onclick="login()">Login</button>
+
+                <p>
+                    Don't have an account?
+                    <span onclick="showRegister()" class="link">Register</span>
+                </p>
+
+            </div>
+
+            <!-- REGISTER -->
+            <div id="registerForm" style="display:none;">
+
+                <input type="text" id="name" placeholder="Full Name"><br><br>
+
+                <input type="date" id="dob"><br><br>
+
+                <input type="tel" id="mobile" placeholder="Mobile Number"><br><br>
+
+                <input type="email" id="emailReg" placeholder="Email"><br><br>
+
+                <input type="password" id="passReg" placeholder="Password"><br><br>
+
+                <button type="button" onclick="register()">Register</button>
+
+                <p>
+                    Already have an account?
+                    <span onclick="showLogin()" class="link">Login</span>
+                </p>
+
+            </div>
+
+            <p id="msg"></p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
