@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food - Mood Learning</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<nav class="navbar">
+
+<a href="index.html">Home</a>
+<a href="mood.html">Mood</a>
+<a href="study.html">Study</a>
+<a href="library.html">Library</a>
+<a href="analytics.html">Analytics</a>
+<a href="mock.html">Mock Test</a>
+
+</nav>
+
+<section id="food" class="section">
+    
+    <h2>🍽 Mood-Based Energy Food</h2> 
+    <p class="food-sub"> Get smart food suggestions based on your mood </p>
+
+     <div class="food-container">
+
+         <div class="food-card tired">
+
+             <h3>😴 Feeling Tired</h3> 
+             <p>☕ Coffee + 🍌 Banana</p>
+              <p class="desc">Boost your energy instantly</p>
+               <button onclick="suggestFood('tired')">Get Suggestion</button>
+             </div>
+
+              <div class="food-card stress"> 
+                <h3>😣 Feeling Stressed</h3>
+                 <p>🍫 Dark Chocolate + 🥗 Salad</p>
+                  <p class="desc">Reduce stress & relax your mind</p>
+                   <button onclick="suggestFood('stress')">Get Suggestion</button>
+                 </div>
+
+                  <div class="food-card focus">
+                     <h3>🎯 Need Focus</h3> <p>🥜 Nuts + 🫐 Berries</p>
+                      <p class="desc">Improve brain power</p>
+                       <button onclick="suggestFood('focus')">Get Suggestion</button> 
+                    </div>
+
+                     <div class="food-card lazy">
+                         <h3>😵 Feeling Lazy</h3>
+                          <p>🥤 Shake + 🍎 Apple</p> 
+                          <p class="desc">Light refreshing energy</p>
+                           <button onclick="suggestFood('lazy')">Get Suggestion</button>
+                         </div>
+
+                          <div class="food-card motivated">
+                             <h3>😎 Feeling Motivated</h3> 
+                             <p>🥗 Protein Salad + 🥤 Smoothie</p> 
+                             <p class="desc">Maintain high energy</p> 
+                             <button onclick="suggestFood('motivated')">Get Suggestion</button>
+                             </div>
+
+                              <div class="food-card confused"> 
+                                <h3>🤯 Feeling Confused</h3> 
+                                <p>🍵 Green Tea + 🍫 Chocolate</p> 
+                                <p class="desc">Clear your mind</p> 
+                                <button onclick="suggestFood('confused')">Get Suggestion</button>
+                             </div>
+
+                              <div class="food-card sleepy">
+                                 <h3>😴 Feeling Sleepy</h3> 
+                                 <p>☕ Strong Coffee + 🍎 Apple</p>
+                                  <p class="desc">Wake up fast</p>
+                                   <button onclick="suggestFood('sleepy')">Get Suggestion</button>
+                                 </div>
+
+                                  <div class="food-card happy">
+                                     <h3>😃 Feeling Happy</h3> 
+                                     <p>🍩 Donut + 🧃 Juice</p>
+                                      <p class="desc">Enjoy & refresh</p> 
+                                      <button onclick="suggestFood('happy')">Get Suggestion</button>
+                                     </div>
+                                     
+                                     </div> 
+                                     <p id="foodMsg" class="food-msg"></p> 
+                                    </section>
+<section class="section">
+
+<h2>Nutrition for Better Learning</h2>
+
+<p>
+Balanced nutrition directly improves memory,
+focus, concentration and mental energy.
+</p>
+
+</section>
+ 
+<section class="section">
+
+<h2>Recommended Study Nutrition</h2>
+
+<div class="card-list">
+
+<div class="card">High Protein Meals</div>
+
+<div class="card">Fresh Fruits</div>
+
+<div class="card">Dry Fruits & Nuts</div>
+
+<div class="card">Hydration Support</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Health & Performance</h2>
+
+<p>
+Proper diet and hydration improve academic productivity
+and reduce fatigue during long study sessions.
+</p>
+
+</section>
+
+<footer class="footer">
+<p>© 2026 Mood Learning</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
