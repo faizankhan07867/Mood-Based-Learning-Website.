@@ -1153,4 +1153,118 @@ padding:8px 12px;
 
 }
 
+/* PREMIUM ANALYTICS CSS */
 
+.analytics-section{
+width:95%;
+margin:auto;
+padding:25px;
+border-radius:25px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(12px);
+box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+.analytics-section h2{
+text-align:center;
+font-size:45px;
+margin-bottom:25px;
+color:white;
+}
+
+/* TOP CARDS */
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:18px;
+margin-bottom:30px;
+}
+
+.stat-box{
+background:white;
+color:#111;
+padding:25px;
+border-radius:18px;
+text-align:center;
+box-shadow:0 8px 18px rgba(0,0,0,0.15);
+}
+
+.stat-box h3{
+font-size:24px;
+margin-bottom:10px;
+}
+
+.stat-box p{
+font-size:32px;
+font-weight:bold;
+}
+
+/* CHART */
+.chart-box{
+background:rgba(255,255,255,0.12);
+padding:20px;
+border-radius:20px;
+margin-bottom:30px;
+}
+
+/* SUBJECT */
+.mini-title{
+margin:20px 0;
+font-size:35px;
+}
+
+.subject-list{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+margin-bottom:25px;
+}
+
+.subject-box{
+background:#ffffff;
+color:#111;
+padding:18px;
+border-radius:14px;
+font-size:24px;
+font-weight:bold;
+text-align:center;
+}
+
+/* TIPS */
+.tips-box{
+background:#111;
+padding:20px;
+border-radius:18px;
+font-size:24px;
+text-align:center;
+margin-bottom:18px;
+}
+
+/* QUOTE */
+.quote-box{
+background:linear-gradient(90deg,#ff6a00,#ffb100);
+padding:18px;
+border-radius:18px;
+font-size:24px;
+text-align:center;
+font-weight:bold;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+.analytics-section h2{
+font-size:34px;
+}
+
+.stat-box p{
+font-size:28px;
+}
+
+.subject-box,
+.tips-box,
+.quote-box{
+font-size:20px;
+}
+
+}
