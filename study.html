@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Study - Mood Learning</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<nav class="navbar">
+
+<a href="index.html">Home</a>
+<a href="mood.html">Mood</a>
+<a href="food.html">Food</a>
+<a href="library.html">Library</a>
+<a href="analytics.html">Analytics</a>
+<a href="mock.html">Mock Test</a>
+
+</nav>
+
+<section id="study" class="section">
+
+<h2>Study Planner</h2>
+
+<input type="text" id="goal" placeholder="Enter today's goal">
+
+<button onclick="saveGoal()">Save Goal</button>
+
+<p id="goalText"></p>
+
+<audio id="alarmSound"
+src="https://www.soundjay.com/buttons/sounds/beep-07.mp3">
+</audio>
+
+<h2 id="timer">25:00</h2>
+
+<button onclick="startTimer()">Start</button>
+<button onclick="stopTimer()">Stop</button>
+<button onclick="playMusic()">🎵 Music</button>
+
+</section>
+
+<footer class="footer">
+<p>© 2026 Mood Learning</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
