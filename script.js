@@ -97,8 +97,8 @@ text.innerText = "🤖 Loading AI Models...";
 
 try {
 
-await faceapi.nets.tinyFaceDetector.loadFromUri("./models");
-await faceapi.nets.faceExpressionNet.loadFromUri("./models");
+await faceapi.nets.tinyFaceDetector.loadFromUri("models");
+await faceapi.nets.faceExpressionNet.loadFromUri("models");
 camera.srcObject = stream;
 
 camera.onloadedmetadata = function(){
