@@ -1041,3 +1041,117 @@ box-shadow:0 0 25px rgba(255,152,0,0.8);
     100%{transform:rotate(360deg);}
 } 
 
+/* =========================
+MOBILE FIX ALL WEBSITE
+========================= */
+
+@media (max-width:768px){
+
+body{
+overflow-x:hidden;
+}
+
+/* General Section */
+.section{
+width:95%;
+padding:18px;
+margin:15px auto;
+border-radius:18px;
+}
+
+/* Heading */
+h1,h2{
+font-size:30px !important;
+text-align:center;
+}
+
+/* Study Planner */
+.study-box{
+padding:20px;
+}
+
+.goal-row{
+flex-direction:column;
+gap:15px;
+}
+
+.goal-row input{
+width:100%;
+font-size:20px;
+min-width:100%;
+}
+
+.goal-row button{
+width:100%;
+font-size:22px;
+}
+
+#timer{
+width:100%;
+font-size:52px !important;
+padding:22px;
+margin:20px auto;
+border-radius:18px;
+}
+
+.btn-row{
+flex-direction:column;
+gap:12px;
+}
+
+.btn-row button{
+width:100%;
+font-size:22px;
+}
+
+/* About Box */
+.about-box{
+width:100%;
+padding:18px;
+overflow:hidden;
+}
+
+.about-box p{
+font-size:20px;
+line-height:1.6;
+text-align:center;
+}
+
+/* Features */
+.about-features{
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+.feature{
+width:100%;
+font-size:18px;
+padding:14px;
+text-align:center;
+}
+
+/* Cards */
+.card-list{
+grid-template-columns:1fr;
+gap:15px;
+}
+
+.card{
+width:100%;
+font-size:18px;
+}
+
+/* Navbar */
+.navbar{
+flex-wrap:wrap;
+gap:10px;
+justify-content:center;
+}
+
+.navbar a{
+font-size:16px;
+padding:8px 12px;
+}
+
+}
