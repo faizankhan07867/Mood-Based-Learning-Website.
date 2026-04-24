@@ -97,15 +97,8 @@ text.innerText = "🤖 Loading AI Models...";
 
 try {
 
-const MODEL_URL =
-"https://faizankhan07867.github.io/Mood-Based-Learning-Website_/models";
-
-await faceapi.nets.tinyFaceDetector.loadFromUri(MODEL_URL);
-await faceapi.nets.faceExpressionNet.loadFromUri(MODEL_URL);
-const stream = await navigator.mediaDevices.getUserMedia({
-video:true
-});
-
+await faceapi.nets.tinyFaceDetector.loadFromUri("./models");
+await faceapi.nets.faceExpressionNet.loadFromUri("./models");
 camera.srcObject = stream;
 
 camera.onloadedmetadata = function(){
