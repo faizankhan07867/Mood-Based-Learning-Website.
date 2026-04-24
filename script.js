@@ -97,8 +97,8 @@ text.innerText = "🤖 Loading AI Models...";
 
 try {
 
-await faceapi.nets.tinyFaceDetector.loadFromUri("./models");
-await faceapi.nets.faceExpressionNet.loadFromUri("./models");
+await faceapi.nets.tinyFaceDetector.loadFromUri("models");
+await faceapi.nets.faceExpressionNet.loadFromUri("models");
 
 const stream = await navigator.mediaDevices.getUserMedia({
 video:true
