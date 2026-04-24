@@ -958,3 +958,37 @@ document.getElementById("result").innerHTML =
 // FULL FRESH AI RECOMMENDATION JS
 // ===============================
 
+
+/* CHART JS */
+
+const ctx = document.getElementById("chart");
+
+new Chart(ctx,{
+type:"bar",
+data:{
+labels:["Mon","Tue","Wed","Thu","Fri","Sat"],
+datasets:[{
+label:"Study Hours",
+data:[2,3,4,3,5,2],
+backgroundColor:[
+"red","blue","green","orange","purple","cyan"
+]
+}]
+},
+options:{
+responsive:true,
+plugins:{
+legend:{
+labels:{
+font:{size:18}
+}
+}
+},
+scales:{
+y:{
+beginAtZero:true
+}
+}
+}
+});
+
